@@ -1,8 +1,7 @@
 use harfbuzz_wasm::{debug, Font, Glyph, GlyphBuffer};
 use wasm_bindgen::prelude::*;
-
+mod dictionary;
 #[wasm_bindgen]
-
 pub fn shape(
     _shape_plan: u32,
     font_ref: u32,
