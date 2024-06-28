@@ -1,1 +1,4 @@
-/target
+target
+.env
+chumma_ttf/.env
+chumma_ttf/target
