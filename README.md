@@ -26,9 +26,9 @@ Install these packages from your distro package manager
 ### Building Harfbuzz with WebAssembly support
 
 ```
-      git clone https://github.com/harfbuzz/harfbuzz
-      cd harfbuzz
-      meson setup build -Dwasm=enabled
+git clone https://github.com/harfbuzz/harfbuzz
+cd harfbuzz
+meson setup build -Dwasm=enabled
 ```
 
 Make sure the output of the last command contains
