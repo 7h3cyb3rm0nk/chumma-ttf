@@ -69,6 +69,8 @@ sweet:shit
 
 **Now to generate the tttf file run this command inside the parent directory:**
 ```
+python -m venv .env
+source .env/bin/activate
 make
 ```
 the font file will be generated as `chumma.ttf`
