@@ -1,6 +1,6 @@
 # chumma-ttf 
 ![](chumma.jpg)
-## chumma-ttf is a ttf file that runs WebAssembly to replace certain words as we type using harfbuzz text shaping engine.
+## chumma-ttf is a ttf file that runs WebAssembly to replace specific words as we type using harfbuzz text shaping engine.
 ### More details about the wasm shaper [here](https://github.com/harfbuzz/harfbuzz/blob/main/docs/wasm-shaper.md)
 
 
