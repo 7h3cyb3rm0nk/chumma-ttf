@@ -80,7 +80,7 @@ fc-cache
 
 # Using the ttf 
 In order to run Wasm inside the ttf you have to preload the shared objects using [LD_PRELOAD](https://man7.org/linux/man-pages/man8/ld.so.8.html) environment variable
-Run
+run
 ```
 export LD_PRELOAD=/path/to/libiwasm.so:/path/to/libharfbuzz.so.0.6XXXX.0
 ```
@@ -89,7 +89,7 @@ to preload them
 **now you can use gedit or any software that uses harfbuzz text shaping engine to use this font and have fun**
 
 
-### Related works:
+### Related works and inspirations:
 - [fuglede.github.io/llama.ttf/](https://fuglede.github.io/llama.ttf/)
 - [LLAMATTF - How to run](https://7h3cyb3rm0nk.medium.com/llamattf-run-llm-inside-a-font-file-161709907630)
 - [github.com/Erk-/programmable-fonts](https://github.com/Erk-/programmable-fonts)
