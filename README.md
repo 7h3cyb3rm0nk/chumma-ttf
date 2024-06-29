@@ -53,7 +53,7 @@ the only shared object we will need will be `libharfbuzz.so.0.6XXXX.0`**
 
 ```
 git clone https://github.com/7h3cyb3rm0nk/chumma-ttf
-cd chumma-ttf
+cd chumma-ttf/chumma_ttf
 ```
 You can edit src/words.conf to replace certain words when typed with chumma ttf
 
