@@ -1,15 +1,15 @@
-# chumma ttf 
+# chumma-ttf 
 ![](chumma.jpg)
-## Chumma-ttf is a ttf file that runs web assembly to replace certain words as we type using harfbuzz text shaping engine.
+## chumma-ttf is a ttf file that runs web assembly to replace certain words as we type using harfbuzz text shaping engine.
 ### More details [here](https://github.com/harfbuzz/harfbuzz/blob/main/docs/wasm-shaper.md)
 
 
 # Configuration 
 - Configuration of chumma-ttf requires [harfbuzz](https://github.com/harfbuzz/harfbuzz) library built with WebAssembly Support and [wasm-macro-runtime](https://github.com/bytecodealliance/wasm-micro-runtime) library.
- - ## Building and setting up the libraries
-   ### Dependencies
-   `meson, pkg-config, ragel, gcc, freetype2, glib2, glib2-devel, cairo`
-    Install these packages from your distro package manager
+## Building and setting up the libraries
+### Dependencies
+`meson, pkg-config, ragel, gcc, freetype2, glib2, glib2-devel, cairo`
+Install these packages from your distro package manager
 
 ### Building wasm-macro-runtime
    ```
