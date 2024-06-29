@@ -3,19 +3,19 @@ use std::include_str;
 
 fn read_config() -> String {
     let config: &str = include_str!("words.conf");
-    config.strip_suffix("\n").expect(config).to_string()
+    config.trim_end().to_string()
 }
 
 fn parse_config(config: String) -> HashMap<String, String> {
-    let mut store: HashMap<String, String> = HashMap::new();
-
-    let list: Vec<&str> = config.split("\n").collect();
-    // println!("{:?}", list);
-    for i in list.iter() {
-        let temp: Vec<_> = i.split(":").collect();
-        store.insert(temp[0].to_string(), temp[1].to_string());
-    }
-    store
+    config
+        .lines()
+        .map(str::trim)
+        .filter(|line| !line.is_empty() || !line.starts_with("#"))
+        .flat_map(|line| {
+            line.split_once(":")
+                .map(|(k, v)| (k.to_string(), v.to_string()))
+        })
+        .collect()
 }
 
 pub fn generate_words() -> HashMap<String, String> {

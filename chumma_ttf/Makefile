@@ -5,6 +5,6 @@ CONF_FILE = ./src/words.conf
 $(TARGET_FONT): pkg/$(WASM) $(BASE_FONT)
 	../bin/otfsurgeon -i $(BASE_FONT) add -o $(TARGET_FONT) Wasm < pkg/$(WASM)
 
-pkg/$(WASM): src/lib.rs $(CONF_FILE)
+pkg/$(WASM): src/lib.rs $(CONF_FILE) src/dictionary.rs
 	wasm-pack build --target web
 
