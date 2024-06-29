@@ -89,6 +89,7 @@ export LD_PRELOAD=/path/to/libiwasm.so:/path/to/libharfbuzz.so.0.6XXXX.0
 to preload them
 
 ### Now you can use Gedit or any software that uses harfbuzz text shaping engine to use this font and have fun
+**(this won't work with browsers like firefox and chrome at the moment)**
 ![](chumma_ttf.gif)
 
 ### Related works and inspirations:
