@@ -47,7 +47,7 @@ Make sure the output of the last command contains
 meson compile -C build
 ```
 **You will have the library built as shared objects in `build/src` directory, since these shared objects would probably be installed in our system by default(a lot of softwares use harfbuzz as text shaping engine)
-the only shared object we will need will be `libharfbuzz.so.0.6XXXX.0`** 
+the only shared object we are going to need is `libharfbuzz.so.0.6XXXX.0`** 
 
 ## Generating Chumma-ttfs
 
@@ -55,7 +55,7 @@ the only shared object we will need will be `libharfbuzz.so.0.6XXXX.0`**
 git clone https://github.com/7h3cyb3rm0nk/chumma-ttf
 cd chumma-ttf/chumma_ttf
 ```
-You can edit src/words.conf to replace certain words when typed with chumma ttf
+You can edit src/words.conf to replace certain words when typed with chumma-ttf
 
 **Example words.conf file**
 ```
@@ -67,7 +67,7 @@ pics:pigs
 sweet:shit
 ```
 
-**Now to generate the tttf file run this command inside the parent directory:**
+**Now to generate the ttf file run this command:**
 ```
 python -m venv .env
 source .env/bin/activate
